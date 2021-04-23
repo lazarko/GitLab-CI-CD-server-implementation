@@ -1,0 +1,35 @@
+"title" : "CI/CD-Server Setup Tutorial",
+"description" : "Example CI/CD-Server using GitLab",
+"difficulty" : "beginner",
+"time" : "10 minutes",
+"details": {
+  "steps":[
+      {
+        "title": "Step 1 - Create a Runner",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Create YAML File",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Create Tests",
+        "text": "step3.md"
+      },
+  ],
+  "intro": {
+    "text": "intro.md",
+    "credits": ""
+  },
+  "finish": {
+    "text": "finish.md",
+  }
+},
+"environment":{
+  "uilayout": "terminal-editor",
+  "uimessage1" :
+"\u001b[32mYour Interactive Bash Terminal.\r\nStart GitLab using`launch.sh`\u001b[m\r\n"
+},
+"backend" : {
+  "imageid" : "openshift"
+}
