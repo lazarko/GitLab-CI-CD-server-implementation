@@ -27,7 +27,7 @@
     }
   },
   "environment":{
-    "uilayout": "terminal-editor",
+    "uilayout": "terminal",
     "uimessage1" :
   "\u001b[32mYour Interactive Bash Terminal.\r\nStart GitLab using`launch.sh`\u001b[m\r\n"
   },
