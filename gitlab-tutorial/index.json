@@ -7,7 +7,7 @@
     "steps":[
         {
           "title": "Step 0 - Set up GitLab",
-          "text": "setp0.md"
+          "text": "step0.md"
         },
         {
           "title": "Step 1 - Create a Runner",
