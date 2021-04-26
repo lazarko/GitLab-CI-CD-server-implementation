@@ -2,11 +2,15 @@
 
 Next step is to create a YAML file, which will set the foundation of the CI/CD server. 
 
-Add different test to the CI/CD Server.  
+First what you want to do is to clone the Github repository (`git clone YOUR_REPOSITORY_ADRESS`). Then
+go to the project folder (`cd REPO_PATH`). 
+
+
 Create the YAML file with the following command `touch .gitlab-ci.yml`{{execute}} in your project repository. Add following code to the
 YAML file:
 
 ```
+
 build-job:
   stage: build
   script:
@@ -29,4 +33,5 @@ deploy-prod:
   stage: deploy
   script:
     - echo "This job deploys something from the $CI_COMMIT_BRANCH branch."
+
 ```

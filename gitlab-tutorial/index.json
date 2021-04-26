@@ -16,6 +16,10 @@
         {
           "title": "Step 3 - Create a YAML File",
           "text": "step3.md"
+        },
+        {
+          "title": "Step 4 - Testing the CI/CD Server",
+          "text": "step4.md"
         }
     ],
     "intro": {
