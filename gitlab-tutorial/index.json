@@ -10,11 +10,11 @@
           "text": "step1.md"
         },
         {
-          "title": "Step 2 - Create YAML File",
+          "title": "Step 2 - Register the Runner",
           "text": "step2.md"
         },
         {
-          "title": "Step 3 - Create Tests",
+          "title": "Step 3 - Create a YAML File",
           "text": "step3.md"
         }
     ],
