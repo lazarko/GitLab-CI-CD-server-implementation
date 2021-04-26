@@ -6,6 +6,10 @@
   "details": {
     "steps":[
         {
+          "title": "Step 0 - Set up GitLab",
+          "text": "setp0.md"
+        },
+        {
           "title": "Step 1 - Create a Runner",
           "text": "step1.md"
         },
