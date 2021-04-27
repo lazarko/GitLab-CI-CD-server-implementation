@@ -1,18 +1,23 @@
-There are two options regarding a runner, we can either use a shared runner
-or creating our own. Shared Runner can be used in smaller projects. 
+# GitLab account
 
+To start of you need to have a GitLab account so if you don't have that yet, go ahead and set it up on [GitLab](https://gitlab.com/users/sign_up)
 
+# Set up a project in GitLab
 
-First what we want to do is to download the GitLab Runner, which can be done with the
-following command: `sudo curl -L --output /usr/local/bin/gitlab-runner "https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64"`{{execute}}
+There are many ways in which you can create projects in GitLab. You can either create a blank project from scratch, import a project from Github, BitBucket, or others, or even create a project from one of many templates. 
 
+The following sections will show how to the set up will work if you have a new blank project and if you have an existing project in Github. If you already have a project in GitLab you can skip this section and move on to ...
 
-Second part of the Runner pre-installation is to change the access permission in the filesystem of the downloaded object: `sudo chmod +x /usr/local/bin/gitlab-runner`{{execute}}
+## Set up with a new project
 
-It is also necessary create a new user to your system with the following command: `sudo useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/bash`{{execute}}
+In GitLab, go to Projects -> New project -> Create blank project. Choose a project name and you are all set up!
 
+## Set up with an existing project in GitHub
 
-Now is the time for the Runner installation to the working directory, which is done by invoking: `gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner`{{execute}}
+In GitLab, go to Projects -> New project -> Import project. Press GitHub as the place you want to import your project from. This will redirect you GitHub where you need to agree to authorize access to gitlabhq.
 
+All your repositories from GitHub will now be listed and you can choose which one you want to import. Importing can take a few seconds. Now you are all set up!
 
-Once the installation is complete the Runner could be started with just simply `gitlab-runner start`{{execute}}. 
+# Clone project
+
+Clone your GitLab project using `git clone` with SSH or HTTPS and go into the project using `cd PROJECT_NAME`

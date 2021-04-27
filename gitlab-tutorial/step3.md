@@ -1,31 +1,20 @@
 
+# Check GitLab Settings
+Go to the project on GitLab and navigate to the `Settings`. From the settings click on `CI/CD` as shown in the image below. 
+![Find Settings Image](./assets/register_runner_1.png)
 
-Next step is to create a YAML file, which will set the foundation of the CI/CD server. 
+When you are in the CI/CD go to the Runner by clicking on expand. From there you will get the URL and token, which are used in the second part of the registration.
+![Find Runner Register Image](./assets/register_runner_2.png)
 
-
-Create the YAML file with the following command `touch .gitlab-ci.yml`{{execute}} in your project repository. Using `nano .gitlab-ci.yml`{{execute}}, add following code to the
-YAML file:
-
-
-    build-job:
-      stage: build
-      script:
-        - echo "Hello, $GITLAB_USER_LOGIN!"
-
-    test-job1:
-      stage: test
-      script:
-        - echo "This job tests something"
-
-    test-job2:
-      stage: test
-      script:
-        - echo "This job tests something, but takes more time than test-job1."
-        - echo "After the echo commands complete, it runs the sleep command for 20 seconds"
-        - echo "which simulates a test that runs 20 seconds longer than test-job1"
-        - sleep 20
-
-    deploy-prod:
-      stage: deploy
-      script:
-        - echo "This job deploys something from the $CI_COMMIT_BRANCH branch."
+# Register the Runner 
+Now it is time to make GitLab aware of our new runner. Run the following command: `gitlab-runner register`{{execute}} and do the following:
+1. Add the URL from GitLab and press enter.
+2. After adding URL, copy the token and paste it in the terminal. 
+2. Next, add description for the runner. This can be changed later on in the GitLab UI.
+3. The terminal will then ask you to enter the tags associated with the runner, right now 
+you can just press enter. Don't worry this can be changed later on in the GitLab UI.
+4. Now you have an option to choose a runner executor. For the sake of this tutorial just write shell and press enter to continue.
+After everything is completed, refresh the GitLab page and you will see the new runner (see image below).
+   
+![Find Runner Register Image](./assets/runner_running.png)
+   

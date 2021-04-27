@@ -7,23 +7,23 @@
     "steps":[
         {
           "title": "Step 1 - Set up GitLab",
-          "text": "step0.md"
-        },
-        {
-          "title": "Step 2 - Create a Runner",
           "text": "step1.md"
         },
         {
-          "title": "Step 3 - Register the Runner",
+          "title": "Step 2 - Create a Runner",
           "text": "step2.md"
         },
         {
-          "title": "Step 4 - Create a YAML File",
+          "title": "Step 3 - Register the Runner",
           "text": "step3.md"
         },
         {
-          "title": "Step 5 - Testing the CI/CD Server",
+          "title": "Step 4 - Create a YAML File",
           "text": "step4.md"
+        },
+        {
+          "title": "Step 5 - Testing the CI/CD Server",
+          "text": "step5.md"
         }
     ],
     "intro": {
