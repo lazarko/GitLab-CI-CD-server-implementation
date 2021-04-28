@@ -29,3 +29,5 @@ YAML file:
       stage: deploy
       script:
         - echo "This job deploys something from the $CI_COMMIT_BRANCH branch."
+
+This sample code will only execute echo commands, but it gives an overview of how you can specify the stages for your project.
