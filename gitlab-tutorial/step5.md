@@ -20,14 +20,14 @@ Observe that the version of Git may be outdated on Katacoda.
 In the case that this causes problems, try using following commands to fix the issue: 
 
 
-1. Remove the old version of git with: `sudo yum remove git`. When promted, type 'y'.
+1. Remove the old version of git with: `sudo yum remove git`{{execute}}. When promted, type "y".
 
-2. Download the new version of git: `sudo yum install -y https://repo.ius.io/ius-release-el7.rpm`.
+2. Download the new version of git: `sudo yum install -y https://repo.ius.io/ius-release-el7.rpm`{{execute}}.
 
-3. Install the new downloaded version `sudo yum install git222`. When promted, type 'y'.
+3. Install the new downloaded version `sudo yum install git222`{{execute}}. When promted, type "y".
 
-4. Run `git --version` to control that the right version is installed (git version 2.22.5).
+4. Run `git --version`{{execute}} to control that the right version is installed (git version 2.22.5).
 
-5. Commit using the command `git commit --allow-empty`{{execute}} and then `git push`{{execute}}.
+5. Commit using the command `git commit -m "second test CI/CD server" --allow-empty`{{execute}} and then `git push`{{execute}}.
 
 6. Check your pipeline again and it should pass all stages!

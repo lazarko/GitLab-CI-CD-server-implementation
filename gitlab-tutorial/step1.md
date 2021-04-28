@@ -4,17 +4,19 @@ To start off you need to have a GitLab account so if you don't have that yet, go
 
 # Set up a project in GitLab
 
-There are many ways in which you can create projects in GitLab. You can either create a blank project from scratch, import a project from Github, BitBucket, or other sources, or even create a project from one of the many templates that GitLab offers. 
+There are many ways in which you can create projects in GitLab. You can either create a blank project from scratch, import a project from Github, BitBucket, or another source, or even create a project from one of the many templates that GitLab offers. 
 
-The following sections will show you how to set up if you are starting from scratch and don't have a project, and if you have an existing project in Github. 
+The following sections will show you how to set up if you
+1. are starting from scratch and don't have a project
+2. have an existing project in Github
 
 If you already have a project in GitLab you can skip this section and move on to the section `clone project` at the end of this page.
 
-## Set up with a new project
+## 1. Set up with a new project
 
 In GitLab, go to Projects -> New project -> Create blank project. Choose a project name and fill out any additional information for your project, and you are all set up!
 
-## Set up with an existing project in GitHub
+## 2. Set up with an existing project in GitHub
 
 In GitLab, go to Projects -> New project -> Import project. Click GitHub as the place you want to import your project from. This will redirect you GitHub where you need to agree to authorize access to gitlabhq.
 
