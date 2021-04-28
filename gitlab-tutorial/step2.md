@@ -1,4 +1,4 @@
-GitLab Runner is an application that works with GitLab CI/CD to run jobs in a pipeline
+GitLab Runner is an application that works with GitLab CI/CD to run jobs in a pipeline.
 
 There are three options regarding runners, we can either use shared runners, group runners or specific runners. When choosing which runner you want to use, think about who you want to have access:
 - Shared runners are for use by all projects

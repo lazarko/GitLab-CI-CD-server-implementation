@@ -1,6 +1,3 @@
-# Create a File
-In the project create a file `echo 'Hello, world.' > foo.txt`{{execute}}
-
 # Add, Commit and Push Changes
 Prepare all the files before the commit using `git add --all`{{execute}}. 
 
@@ -8,7 +5,7 @@ Next stage is to commit the changes by doing the `git commit -m "test CI/CD serv
 
 Git might ask you to register as a user. If so, enter `git config --global user.email "you@example.com"`, with your email and try to commit again.
 
-Lastly, just push the changes with `git push`{{execute}} command. 
+Lastly, just push the changes with `git push`{{execute}} command. If you created an empty project you might need to use the `git push -u origin master`{{execute}} command instead.
 
 # Check the status of your pipeline
 
@@ -23,12 +20,14 @@ Observe that the version of Git may be outdated on Katacoda.
 In the case that this causes problems, try using following commands to fix the issue: 
 
 
-1. Remove the old version of git with: `sudo yum remove git`.
+1. Remove the old version of git with: `sudo yum remove git`. When promted, type 'y'.
 
 2. Download the new version of git: `sudo yum install -y https://repo.ius.io/ius-release-el7.rpm`.
 
-3. Install the new downloaded version `sudo yum install git222`.
+3. Install the new downloaded version `sudo yum install git222`. When promted, type 'y'.
 
-4. Run `git --version` to control that the right version is installed (git version 2.22.2).
+4. Run `git --version` to control that the right version is installed (git version 2.22.5).
 
-5. Repeat step 5 in this scenario.
+5. Commit using the command `git commit --allow-empty`{{execute}} and then `git push`{{execute}}.
+
+6. Check your pipeline again and it should pass all stages!
